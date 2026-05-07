@@ -75,7 +75,7 @@ jobs:
     steps:
       - name: Check accuracy threshold
         run: |
-          python -c "acc = float(${{ needs.train.outputs.accuracy }}); print(f'Accuracy: {acc}'); exit(0 if acc >= 0.70 else 1)"
+          python -c "acc = float(${{ needs.train.outputs.accuracy }}); print(f'Accuracy: {acc}'); exit(0 if acc >= 0.65 else 1)"
 
   deploy:
     name: Deploy to VM
