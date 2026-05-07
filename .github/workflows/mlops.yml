@@ -3,11 +3,6 @@ name: MLOps Pipeline
 on:
   push:
     branches: [main]
-    paths:
-      - 'data/**.dvc'
-      - 'src/**.py'
-      - 'params.yaml'
-      - '.dvc/config'
   workflow_dispatch:
 
 jobs:
