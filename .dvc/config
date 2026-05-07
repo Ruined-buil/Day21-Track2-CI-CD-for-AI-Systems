@@ -2,4 +2,3 @@
     remote = myremote
 ['remote "myremote"']
     url = gs://vinai20kdemo/dvc
-    credentialpath = ../sa-key.json
